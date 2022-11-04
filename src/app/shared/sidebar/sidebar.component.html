@@ -6,7 +6,8 @@
       *ngFor="let item of record"
       href="#"
       class="list-group-item list-group-item-action"
-      >{{ item }}</a
+      (click)="search(item)"
+      >{{ item | titlecase}}</a
     >
   </div>
 </div>

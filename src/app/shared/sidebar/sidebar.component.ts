@@ -14,4 +14,8 @@ export class SidebarComponent implements OnInit {
   get record() {
     return this.gitsService.record;
   }
+
+  search(term: string) {
+    this.gitsService.searchGifs(term);
+  }
 }
